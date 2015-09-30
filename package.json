@@ -7,8 +7,7 @@
   },
   "author": "Antony Donovan",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-concurrent": "^1.0.0",
@@ -18,6 +17,7 @@
     "grunt-jsbeautifier": "^0.2.10",
     "grunt-jscs": "^1.8.0",
     "grunt-jsonlint": "^1.0.4",
+    "grunt-node-inspector": "^0.3.0",
     "grunt-nodemon": "^0.4.0",
     "grunt-open": "^0.2.3",
     "grunt-plato": "^1.2.1",
