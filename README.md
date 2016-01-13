@@ -1,10 +1,10 @@
 ![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-# JavaScript Basics 2
+# JavaScript Reference Types
 
 ## Prerequisites
 
-[JavaScript Basics 1](https://github.com/ga-wdi-boston/js-basics-1-assessment)
+[JavaScript Basics](https://github.com/ga-wdi-boston/js-basics)
 
 ## Introduction
 
@@ -14,11 +14,10 @@ Exercising the JavaScript Reference Types.
 
 By the end of this lesson, students should be able to:
 
-- Create and invoke functions with argument dependent return values.
-- Create and invoke functions with optional arguments.
-- Create a list of normalized words from a string
-- Create a list of unique words from a list of normalized words
-- Store information about a list of words in a dictionary
+- Identify array, object, and function literals
+- Create and invoke functions with argument-dependent return values
+- Store, access, and update data values in objects and arrays
+- Iterate through an array or object and operate on its elements
 
 ## Reference types
 
