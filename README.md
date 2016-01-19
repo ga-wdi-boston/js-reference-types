@@ -134,7 +134,7 @@ JavaScript uses function scope.  This means that each new function invocation cr
 
 ### Collections
 
-There are two general collection types.  The `list` and the `dictionary` (aka `hasmap`, `map`, `hash`, ...).
+There are two general collection types.  The `list` and the `dictionary` (aka `hashmap`, `map`, `hash`, ...).
 
 - Lists store lists of things.
 - Dictionaries store uniquely named values.
