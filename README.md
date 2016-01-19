@@ -165,7 +165,7 @@ $ grunt test
 
 ## Lab
 
-We'll use `lib/lab.js` to build functions to wrap some of the collection processing we've done before.
+We'll use `lib/lab.js` to build functions to wrap some of the collection processing we've done before.  This practice is meant to be challenging.
 
 ## Additional Resources
 
