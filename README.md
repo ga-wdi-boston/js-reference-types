@@ -32,9 +32,9 @@ The first two are used as collections.  The last is encapsulated executable code
 The following shows the simplest examples of these types created with literal syntax:
 
 ```js
-var hashmap;
-var ary;
-var func;
+let hashmap;
+let ary;
+let func;
 
 hashmap = {};
 ary = [];
@@ -46,10 +46,10 @@ You can think of each reference type as storing values.  You access the values s
 A key difference between a reference and primitive type is best demonstrated with the following code:
 
 ```js
-var prim;
-var otherPrim;
-var ref;
-var otherRef;
+let prim;
+let otherPrim;
+let ref;
+let otherRef;
 
 prim = 2;
 otherPrim = prim;
@@ -75,11 +75,11 @@ In mathematics, a function maps one or more inputs to a single output.
 JavaScript isn't that strict, allowing zero inputs or no specified output.
 
 ```js
-var five = function five() {
+let five = function five() {
   return 5;
 };
 
-var add = function add(a, b){
+let add = function add(a, b){
   a + b;
 }
 ```
@@ -99,15 +99,15 @@ When you create a function, you specify the parameters (the formal parameters,  
 In JavaScript, functions can be defined as taking zero or more arguments.
 
 ```js
-var zero = function zero() {
+let zero = function zero() {
   return 0;
 };
 
-var one = function one(arg){
+let one = function one(arg){
   return arg;
 }
 
-var three = function three(arg1, arg2, arg3){
+let three = function three(arg1, arg2, arg3){
   return arg2;
 }
 ```
@@ -115,22 +115,6 @@ var three = function three(arg1, arg2, arg3){
 What happens when we call a function with the wrong number of arguments?
 
 How would you create a function with an optional argument?
-
-#### Scope
-
-What do you think of when you hear the word "scope"?
-
-```js
-
-var globalScope = 3;
-
-var scope = function () {
-  var functionScope = 5;
-  return globalScope + functionScope;
-}
-```
-
-JavaScript uses function scope.  This means that each new function invocation creates a new scope.
 
 ### Collections
 
@@ -144,8 +128,8 @@ In JavaScript we use Array and Object respectively to implement these collection
 #### Arrays (list)
 
 ```js
-var fibonacci = [0, 1];
-for (var i = 2; i < 10; i++) {
+let fibonacci = [0, 1];
+for (let i = 2; i < 10; i++) {
   fibonacci[i] = fibonacci[i-1] = fibonacci[i-2];
 }
 ```
@@ -153,8 +137,8 @@ for (var i = 2; i < 10; i++) {
 #### Object (as Hashmap aka dictionary)
 
 ```js
-> var Instructor = {'given name':'Antony', 'surname':'Donovan','occupation':'WDI Instructor'};
-> var dir = {};
+> let instructor = {'given name':'Antony', 'surname':'Donovan','occupation':'WDI Instructor'};
+> let dir = {};
 >
 ```
 
