@@ -16,7 +16,7 @@ describe('collections', function() {
       'of', 'nature\'s', 'god', 'entitle', 'them', 'a', 'decent',
       'respect', 'to', 'the', 'opinions', 'of', 'mankind', 'requires',
       'that', 'they', 'should', 'declare', 'the', 'causes', 'which',
-      'impel', 'them', 'to', 'the', 'separation'
+      'impel', 'them', 'to', 'the', 'separation',
     ];
 
     it('has the correct length', function() {
@@ -39,7 +39,7 @@ describe('collections', function() {
       'separate', 'equal', 'station', 'laws', 'nature', 'nature\'s',
       'god', 'entitle', 'a', 'decent', 'respect', 'opinions', 'mankind',
       'requires', 'that', 'they', 'should', 'declare', 'causes',
-      'impel', 'separation'
+      'impel', 'separation',
     ];
 
     it('has the correct length', function() {
@@ -56,7 +56,6 @@ describe('collections', function() {
 
     var wordFrequencies = {
       when: 1,
-      in: 1,
       the: 9,
       course: 1,
       of: 5,
@@ -103,8 +102,10 @@ describe('collections', function() {
       declare: 1,
       causes: 1,
       impel: 1,
-      separation: 1
+      separation: 1,
     };
+
+    wordFrequencies.in = 1; // js-beautify hack
 
     it('has the correct length', function() {
       expect(Object.keys(collections.wordFrequencies).length).toBe(49);

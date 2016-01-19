@@ -25,7 +25,7 @@ describe('collections lab', function() {
       'respect', 'separate', 'separation', 'should', 'station', 'that',
       'the', 'the', 'the', 'the', 'the', 'the', 'the', 'the', 'the',
       'them', 'them', 'them', 'they', 'to', 'to', 'to', 'to', 'to',
-      'when', 'which', 'which', 'which', 'with'
+      'when', 'which', 'which', 'which', 'with',
     ];
 
     it('has the correct length', function() {
@@ -49,7 +49,7 @@ describe('collections lab', function() {
       'nature\'s', 'necessary', 'of', 'one', 'opinions', 'people',
       'political', 'powers', 'requires', 'respect', 'separate',
       'separation', 'should', 'station', 'that', 'the', 'them', 'they',
-      'to', 'when', 'which', 'with'
+      'to', 'when', 'which', 'with',
     ];
 
     it('has the correct length', function() {

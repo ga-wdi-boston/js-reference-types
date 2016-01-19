@@ -7,26 +7,25 @@
   },
   "author": "Antony Donovan",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-concurrent": "^1.0.0",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-istanbul": "^0.5.0",
-    "grunt-jasmine-nodejs": "^1.4.0",
+    "grunt-concurrent": "^2.1.0",
+    "grunt-contrib-jshint": "^0.12.0",
+    "grunt-istanbul": "^0.6.1",
+    "grunt-jasmine-nodejs": "^1.4.3",
     "grunt-jsbeautifier": "^0.2.10",
-    "grunt-jscs": "^1.8.0",
-    "grunt-jsonlint": "^1.0.4",
-    "grunt-node-inspector": "^0.3.0",
-    "grunt-nodemon": "^0.4.0",
+    "grunt-jscs": "^2.6.0",
+    "grunt-jsonlint": "^1.0.7",
+    "grunt-node-inspector": "^0.4.1",
+    "grunt-nodemon": "^0.4.1",
     "grunt-open": "^0.2.3",
-    "grunt-plato": "^1.2.1",
-    "load-grunt-config": "^0.17.1",
-    "time-grunt": "^1.2.1"
+    "grunt-plato": "^1.3.0",
+    "load-grunt-config": "^0.19.1",
+    "time-grunt": "^1.3.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ga-wdi-boston/js-basics-2.git"
+    "url": "git+https://github.com/ga-wdi-boston/js-reference-types.git"
   },
   "keywords": [
     "collections",
@@ -35,7 +34,7 @@
     "grunt"
   ],
   "bugs": {
-    "url": "https://github.com/ga-wdi-boston/js-basics-2/issues"
+    "url": "https://github.com/ga-wdi-boston/js-reference-types/issues"
   },
-  "homepage": "https://github.com/ga-wdi-boston/js-basics-2#readme"
+  "homepage": "https://github.com/ga-wdi-boston/js-reference-types#readme"
 }
