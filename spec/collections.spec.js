@@ -1,12 +1,12 @@
 'use strict';
 
-var collections = require('../lib/collections.js');
+const collections = require('../lib/collections.js');
 
 describe('collections', function() {
 
   describe('normalized words', function() {
 
-    var normalizedWords = [
+    const normalizedWords = [
       'when', 'in', 'the', 'course', 'of', 'human', 'events', 'it',
       'becomes', 'necessary', 'for', 'one', 'people', 'to', 'dissolve',
       'the', 'political', 'bands', 'which', 'have', 'connected', 'them',
@@ -31,7 +31,7 @@ describe('collections', function() {
 
   describe('unique words', function() {
 
-    var uniqueWords = [
+    const uniqueWords = [
       'when', 'in', 'the', 'course', 'of', 'human', 'events', 'it',
       'becomes', 'necessary', 'for', 'one', 'people', 'to', 'dissolve',
       'political', 'bands', 'which', 'have', 'connected', 'them',
@@ -54,7 +54,7 @@ describe('collections', function() {
 
   describe('word frequencies', function() {
 
-    var wordFrequencies = {
+    const wordFrequencies = {
       when: 1,
       the: 9,
       course: 1,

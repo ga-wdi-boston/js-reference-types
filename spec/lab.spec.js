@@ -1,6 +1,6 @@
 'use strict';
 
-var paragraph =
+const paragraph =
   'We the People of the United States, in Order to form a more ' +
   'perfect Union, establish Justice, insure domestic Tranquility, ' +
   'provide for the common defence, promote the general Welfare, and ' +
@@ -8,13 +8,13 @@ var paragraph =
   'do ordain and establish this Constitution for the United States ' +
   'of America.';
 
-var collFuncs = require('../lib/lab.js');
+const collFuncs = require('../lib/lab.js');
 
 describe('collections lab', function() {
 
   describe('normalized words', function() {
 
-    var normalizedWords = [
+    const normalizedWords = [
       'a', 'among', 'and', 'and', 'and', 'another', 'assume', 'bands',
       'becomes', 'causes', 'connected', 'course', 'decent', 'declare',
       'dissolve', 'earth', 'entitle', 'equal', 'events', 'for', 'god',
@@ -40,7 +40,7 @@ describe('collections lab', function() {
 
   describe('unique words', function() {
 
-    var sortedUniqueWords = [
+    const sortedUniqueWords = [
       'a', 'among', 'and', 'another', 'assume', 'bands', 'becomes',
       'causes', 'connected', 'course', 'decent', 'declare', 'dissolve',
       'earth', 'entitle', 'equal', 'events', 'for', 'god', 'have',
