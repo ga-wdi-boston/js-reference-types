@@ -180,3 +180,8 @@ We'll use `lib/lab.js` to build functions to wrap some of the collection process
 
 - https://en.wikipedia.org/wiki/Hash_table
 - https://en.wikipedia.org/wiki/Array_data_structure
+
+### Regular expressions
+
+- http://regexone.com/
+- http://scriptular.com/
