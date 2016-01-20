@@ -21,7 +21,7 @@ By the end of this lesson, students should be able to:
 
 ## Reference types
 
-In JavaScript, all reference types are `typeof refVar === 'object'` but we use three in specific circumstances.
+The following is true for all reference types In JavaScript:  `refVar instanceof Object === true`.  We use these three in specific circumstances.
 
 - Plain Object
 - Array
@@ -32,16 +32,26 @@ The first two are used as collections.  The last is encapsulated executable code
 The following shows the simplest examples of these types created with literal syntax:
 
 ```js
-let hashmap;
-let ary;
+let dictionary;
+let list;
 let func;
 
-hashmap = {};
-ary = [];
+dictionary = {};
+list = [];
 func = function func(){};
 ```
 
-You can think of each reference type as storing values.  You access the values stored in a function reference using invocation syntax, `func()`.  You access the values stored in an array using index syntax, `ary[0]`.  And finally, you use member access top get the values from a plain object, `hashmap.name` or `hashmap['name']`.
+And here is the equivalent using constructor function syntax (a topic we'll cover later):
+
+```js
+dictionary = new Object();
+list = new Array();
+func = new Function();
+```
+
+The literal syntax is more common and allows for functionality unavailable with the constructor function syntax.
+
+You can think of each reference type as storing values.  You access the values stored in a function reference using invocation syntax, `func()`.  You access the values stored in an array using index syntax, `list[0]`.  And finally, you use member access top get the values from a plain object, `dictionary.name` or `dictionary['name']`.
 
 A key difference between a reference and primitive type is best demonstrated with the following code:
 
@@ -134,7 +144,7 @@ for (let i = 2; i < 10; i++) {
 }
 ```
 
-#### Object (as Hashmap aka dictionary)
+#### Object (as dictionary)
 
 ```js
 > let instructor = {'given name':'Antony', 'surname':'Donovan','occupation':'WDI Instructor'};
