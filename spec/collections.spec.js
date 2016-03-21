@@ -13,7 +13,7 @@ describe('collections', () => {
       'WITH', 'ANOTHER', 'AND', 'TO', 'ASSUME', 'AMONG', 'THE',
       'POWERS', 'OF', 'THE', 'EARTH', 'THE', 'SEPARATE', 'AND', 'EQUAL',
       'STATION', 'TO', 'WHICH', 'THE', 'LAWS', 'OF', 'NATURE', 'AND',
-      'OF', 'S', 'GOD', 'ENTITLE', 'THEM', 'A', 'DECENT',
+      'OF', 'NATURES', 'GOD', 'ENTITLE', 'THEM', 'A', 'DECENT',
       'RESPECT', 'TO', 'THE', 'OPINIONS', 'OF', 'MANKIND', 'REQUIRES',
       'THAT', 'THEY', 'SHOULD', 'DECLARE', 'THE', 'CAUSES', 'WHICH',
       'IMPEL', 'THEM', 'TO', 'THE', 'SEPARATION',
@@ -36,7 +36,7 @@ describe('collections', () => {
       'BECOMES', 'NECESSARY', 'FOR', 'ONE', 'PEOPLE', 'TO', 'DISSOLVE',
       'POLITICAL', 'BANDS', 'WHICH', 'HAVE', 'CONNECTED', 'THEM',
       'WITH', 'ANOTHER', 'AND', 'ASSUME', 'AMONG', 'POWERS', 'EARTH',
-      'SEPARATE', 'EQUAL', 'STATION', 'LAWS', 'NATURE', 'S',
+      'SEPARATE', 'EQUAL', 'STATION', 'LAWS', 'NATURE', 'NATURES',
       'GOD', 'ENTITLE', 'A', 'DECENT', 'RESPECT', 'OPINIONS', 'MANKIND',
       'REQUIRES', 'THAT', 'THEY', 'SHOULD', 'DECLARE', 'CAUSES',
       'IMPEL', 'SEPARATION',
@@ -61,7 +61,6 @@ describe('collections', () => {
       WHICH: 3,
       THEM: 3,
       AND: 3,
-      NATURE: 2,
     };
 
     it('has the correct length', () => {

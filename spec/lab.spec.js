@@ -15,15 +15,15 @@ xdescribe('collections lab', () => {
   describe('normalized words', () => {
 
     const normalizedWords = [
-      'a', 'america', 'and', 'and', 'and', 'blessings', 'common',
-      'constitution', 'defence', 'do', 'domestic', 'establish',
-      'establish', 'for', 'for', 'form', 'general', 'in',
-      'insure', 'justice', 'liberty', 'more', 'of', 'of', 'of',
-      'ordain', 'order', 'our', 'ourselves', 'people', 'perfect',
-      'posterity', 'promote', 'provide', 'secure', 'states',
-      'states', 'the', 'the', 'the', 'the', 'the', 'the', 'this',
-      'to', 'to', 'tranquility', 'union', 'united', 'united',
-      'we', 'welfare',
+      'A', 'AMERICA', 'AND', 'AND', 'AND', 'BLESSINGS', 'COMMON',
+      'CONSTITUTION', 'DEFENCE', 'DO', 'DOMESTIC', 'ESTABLISH',
+      'ESTABLISH', 'FOR', 'FOR', 'FORM', 'GENERAL', 'IN',
+      'INSURE', 'JUSTICE', 'LIBERTY', 'MORE', 'OF', 'OF', 'OF',
+      'ORDAIN', 'ORDER', 'OUR', 'OURSELVES', 'PEOPLE', 'PERFECT',
+      'POSTERITY', 'PROMOTE', 'PROVIDE', 'SECURE', 'STATES',
+      'STATES', 'THE', 'THE', 'THE', 'THE', 'THE', 'THE', 'THIS',
+      'TO', 'TO', 'TRANQUILITY', 'UNION', 'UNITED', 'UNITED',
+      'WE', 'WELFARE',
     ];
 
     it('has the correct length', () => {
@@ -40,13 +40,13 @@ xdescribe('collections lab', () => {
   describe('unique words', () => {
 
     const sortedUniqueWords = [
-      'a', 'america', 'and', 'blessings', 'common',
-      'constitution', 'defence', 'do', 'domestic', 'establish',
-      'for', 'form', 'general', 'in', 'insure', 'justice',
-      'liberty', 'more', 'of', 'ordain', 'order', 'our',
-      'ourselves', 'people', 'perfect', 'posterity', 'promote',
-      'provide', 'secure', 'states', 'the', 'this', 'to',
-      'tranquility', 'union', 'united', 'we', 'welfare',
+      'A', 'AMERICA', 'AND', 'BLESSINGS', 'COMMON',
+      'CONSTITUTION', 'DEFENCE', 'DO', 'DOMESTIC', 'ESTABLISH',
+      'FOR', 'FORM', 'GENERAL', 'IN', 'INSURE', 'JUSTICE',
+      'LIBERTY', 'MORE', 'OF', 'ORDAIN', 'ORDER', 'OUR',
+      'OURSELVES', 'PEOPLE', 'PERFECT', 'POSTERITY', 'PROMOTE',
+      'PROVIDE', 'SECURE', 'STATES', 'THE', 'THIS', 'TO',
+      'TRANQUILITY', 'UNION', 'UNITED', 'WE', 'WELFARE',
     ];
 
     it('has the correct length', () => {
