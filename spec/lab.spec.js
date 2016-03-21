@@ -10,9 +10,9 @@ const paragraph =
 
 const collFuncs = require('../lib/lab.js');
 
-describe('collections lab', function() {
+xdescribe('collections lab', () => {
 
-  describe('normalized words', function() {
+  describe('normalized words', () => {
 
     const normalizedWords = [
       'a', 'america', 'and', 'and', 'and', 'blessings', 'common',
@@ -26,18 +26,18 @@ describe('collections lab', function() {
       'we', 'welfare',
     ];
 
-    it('has the correct length', function() {
+    it('has the correct length', () => {
       expect(collFuncs.getNormalizedWords(paragraph).length).toBe(52);
     });
 
-    it('matches expected array', function() {
+    it('matches expected array', () => {
       expect(collFuncs.getNormalizedWords(paragraph).sort())
         .toEqual(normalizedWords.sort());
     });
 
   });
 
-  describe('unique words', function() {
+  describe('unique words', () => {
 
     const sortedUniqueWords = [
       'a', 'america', 'and', 'blessings', 'common',
@@ -49,24 +49,24 @@ describe('collections lab', function() {
       'tranquility', 'union', 'united', 'we', 'welfare',
     ];
 
-    it('has the correct length', function() {
+    it('has the correct length', () => {
       expect(collFuncs.getUniqueWords(paragraph).length).toBe(38);
     });
 
-    it('matches expected array', function() {
+    it('matches expected array', () => {
       expect(collFuncs.getUniqueWords(paragraph).sort())
         .toEqual(sortedUniqueWords);
     });
 
   });
 
-  describe('word count', function() {
+  describe('word count', () => {
 
-    it('has the correct word count', function() {
+    it('has the correct word count', () => {
       expect(collFuncs.wordCount(paragraph)).toBe(52);
     });
 
-    it('has the correct unique word count', function() {
+    it('has the correct unique word count', () => {
       expect(collFuncs.wordCount(paragraph, true)).toBe(38);
     });
 
