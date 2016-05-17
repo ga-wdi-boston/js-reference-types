@@ -206,8 +206,6 @@ We'll also need two **Regular expressions**:
 
 One or more whitespace characters: `/\s+/`
 
-One or more non-word or single-quote characters: `/\W+/`
-
 ```bash
 grunt test
 ```
