@@ -1,25 +1,29 @@
-![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
+[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 # JavaScript Reference Types
 
+Exercising the JavaScript Reference Types.
+
 ## Prerequisites
 
-[JavaScript Basics](https://github.com/ga-wdi-boston/js-basics)
-
-## Introduction
-
-Exercising the JavaScript Reference Types.
+-   [ga-wdi-boston/js-basics](https://github.com/ga-wdi-boston/js-basics)
 
 ## Objectives
 
-By the end of this lesson, students should be able to:
+By the end of this lesson, developers should be able to:
 
 -   Identify array, object, and function literals
 -   Create and invoke functions with argument-dependent return values
 -   Store, access, and update data values in objects and arrays
 -   Iterate through an array or object and operate on its elements
 
-## Reference types
+## Preparation
+
+1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+    this repository.
+1.  Install dependencies with `npm install`.
+
+## Reference Types
 
 The following is true for all reference types In JavaScript:
  `refVar instanceof Object === true`.
@@ -31,10 +35,10 @@ These three reference type are ubiquitous in JavaScript.
 -   Function
 
 The first two are used as collections.  The last is encapsulated executable
- code.  All three can be created using reference type literals.
+code.  All three can be created using reference type literals.
 
 The following shows the simplest examples of these types created with literal
- syntax:
+syntax:
 
 ```js
 let list;
@@ -47,7 +51,7 @@ code = function (){}; // or `code = () => {};`
 ```
 
 And here is the equivalent using constructor function syntax (a topic we'll
- cover later):
+cover later):
 
 ```js
 list = new Array();
@@ -56,16 +60,16 @@ code = new Function();
 ```
 
 The literal syntax is more common and allows for functionality unavailable with
- the constructor function syntax.
+the constructor function syntax.
 
 You can think of each reference type as storing values.  You access the values
- stored in a function reference using invocation syntax, `code()`.  You access
- the values stored in an array using index syntax, `list[0]`.  And finally, you
- use member access to get the values from a plain object, `dictionary.name` or
- `dictionary['name']`.
+stored in a function reference using invocation syntax, `code()`.  You access
+the values stored in an array using index syntax, `list[0]`.  And finally, you
+use member access to get the values from a plain object, `dictionary.name` or
+`dictionary['name']`.
 
 A key difference between a reference and primitive type is best demonstrated
- with the following code:
+with the following code:
 
 ```js
 let primitive;
@@ -107,23 +111,23 @@ let add = function add(a, b){
 ```
 
 Strictly speaking, all JavaScript functions evaluate to a value, but that value
- is `undefined` if we do not provide a return (explicitly or implicitly).
+is `undefined` if we do not provide a return (explicitly or implicitly).
 
 What can we do with functions?
 
 Functions provide important parts of the building blocks of programs,
- abstraction and encapsulation.
+abstraction and encapsulation.
 
 It is important to remember that console.log prints its argument to the
- `console` (the terminal using node, the console area of the debug tools using
- chrome) but does not return a value.
+`console` (the terminal using node, the console area of the debug tools using
+chrome) but does not return a value.
 
 #### Parameters and Arguments
 
 When you create a function, you specify the parameters (the formal parameters,
- variables local to the function).  When you call a function, you specify the
- arguments (whose values become the actual parameters, which are the values that
- the formal parameters are set to when your function executes).
+variables local to the function).  When you call a function, you specify the
+arguments (whose values become the actual parameters, which are the values that
+the formal parameters are set to when your function executes).
 
 In JavaScript, functions can be defined as taking zero or more arguments.
 
@@ -141,7 +145,7 @@ let three = function three(param1, param2, param3){
 }
 ```
 
-### Arguments and Return values
+### Arguments and Return Values
 
 ```js
 let addOne = (num) => num + 1;
@@ -154,7 +158,7 @@ How would you create a function with an optional argument?
 ### Collections
 
 There are two general collection types.  The `list` and the `dictionary` (aka
- `hashmap`, `map`, `hash`, ...).
+`hashmap`, `map`, `hash`, ...).
 
 -   Lists store lists of things.
 -   Dictionaries store uniquely named values.
@@ -186,7 +190,7 @@ let seniorConsultant = {
 let consultant = {};
 ```
 
-### Code along
+### Code-Along: Analyze Text
 
 We'll be using the file `lib/collections.js` as a starting point to:
 
@@ -198,9 +202,9 @@ We'll be using the file `lib/collections.js` as a starting point to:
  the string).
 
 We won't get to methods in detail until later, but there are three on String
- we'll need to create a list of normalized words:  `split`, which breaks a
- String into an Array;  `replace`, which makes substitutions; and `toUpperCase`,
- which does the obvious.
+we'll need to create a list of normalized words:  `split`, which breaks a String
+into an Array;  `replace`, which makes substitutions; and `toUpperCase`, which
+does the obvious.
 
 We'll also need two **Regular expressions**:
 
@@ -213,7 +217,7 @@ grunt test
 ## Lab
 
 We'll use `lib/lab.js` to build functions to wrap some of the collection
- processing we've done before.  This practice is meant to be challenging.
+processing we've done before.  This practice is meant to be challenging.
 
 ## Additional Resources
 
