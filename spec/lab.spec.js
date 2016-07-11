@@ -1,5 +1,8 @@
 'use strict';
 
+const chai = require('chai');
+const expect = chai.expect;
+
 const paragraph =
   'We the People of the United States, in Order to form a more ' +
   'perfect Union, establish Justice, insure domestic Tranquility, ' +
@@ -27,12 +30,12 @@ xdescribe('collections lab', () => {
     ];
 
     it('has the correct length', () => {
-      expect(collFuncs.getNormalizedWords(paragraph).length).toBe(52);
+      expect(collFuncs.getNormalizedWords(paragraph).length).to.equal(52);
     });
 
     it('matches expected array', () => {
       expect(collFuncs.getNormalizedWords(paragraph).sort())
-        .toEqual(normalizedWords.sort());
+        .to.deep.equal(normalizedWords.sort());
     });
 
   });
@@ -50,12 +53,12 @@ xdescribe('collections lab', () => {
     ];
 
     it('has the correct length', () => {
-      expect(collFuncs.getUniqueWords(paragraph).length).toBe(38);
+      expect(collFuncs.getUniqueWords(paragraph).length).to.equal(38);
     });
 
     it('matches expected array', () => {
       expect(collFuncs.getUniqueWords(paragraph).sort())
-        .toEqual(sortedUniqueWords);
+        .to.deep.equal(sortedUniqueWords);
     });
 
   });
@@ -63,11 +66,11 @@ xdescribe('collections lab', () => {
   describe('word count', () => {
 
     it('has the correct word count', () => {
-      expect(collFuncs.wordCount(paragraph)).toBe(52);
+      expect(collFuncs.wordCount(paragraph)).to.equal(52);
     });
 
     it('has the correct unique word count', () => {
-      expect(collFuncs.wordCount(paragraph, true)).toBe(38);
+      expect(collFuncs.wordCount(paragraph, true)).to.equal(38);
     });
 
   });

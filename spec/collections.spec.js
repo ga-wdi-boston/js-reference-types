@@ -1,5 +1,9 @@
 'use strict';
 
+const chai = require('chai');
+
+const expect = chai.expect;
+
 const collections = require('../lib/collections.js');
 
 describe('collections', () => {
@@ -20,11 +24,11 @@ describe('collections', () => {
     ];
 
     it('has the correct length', () => {
-      expect(collections.normalizedWords.length).toBe(71);
+      expect(collections.normalizedWords.length).to.equal(71);
     });
 
     it('matches expected array', () => {
-      expect(collections.normalizedWords).toEqual(normalizedWords);
+      expect(collections.normalizedWords).to.deep.equal(normalizedWords);
     });
 
   });
@@ -43,11 +47,11 @@ describe('collections', () => {
     ];
 
     it('has the correct length', () => {
-      expect(collections.uniqueWords.length).toBe(49);
+      expect(collections.uniqueWords.length).to.equal(49);
     });
 
     it('matches expected array', () => {
-      expect(collections.uniqueWords).toEqual(uniqueWords);
+      expect(collections.uniqueWords).to.deep.equal(uniqueWords);
     });
 
   });
@@ -64,7 +68,7 @@ describe('collections', () => {
     };
 
     it('has the correct length', () => {
-      expect(Object.keys(collections.wordFrequencies).length).toBe(49);
+      expect(Object.keys(collections.wordFrequencies).length).to.equal(49);
     });
 
     it('matches keys to expected array', () => {
@@ -74,7 +78,7 @@ describe('collections', () => {
           delete wordFreqs[key];
         }
       });
-      expect(wordFreqs).toEqual(wordFreqsGreaterThan1);
+      expect(wordFreqs).to.deep.equal(wordFreqsGreaterThan1);
     });
 
   });
