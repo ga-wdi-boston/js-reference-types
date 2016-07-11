@@ -79,10 +79,10 @@ let otherReference;
 
 primitive = 2;
 otherPrimitive = primitive;
-prim = 7;
+primitive = 7;
 
-prim;
-otherPrim;
+primitive;
+otherPrimitive;
 
 reference = {};
 otherReference = reference;
