@@ -21,7 +21,10 @@ By the end of this lesson, developers should be able to:
 
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
-1.  Install dependencies with `npm install`.
+
+2.  Create a new branch, `training`, for your work and change into it.
+
+3.  Install dependencies with `npm install`.
 
 ## Reference Types
 
@@ -94,20 +97,20 @@ reference;
 otherReference;
 ```
 
-### Functions
+### Demo: Functions
 
 In mathematics, a function maps one or more inputs to a single output.
 
 JavaScript isn't that strict, allowing zero inputs or no specified output.
 
 ```js
-let five = function five() {
+const five = function five() {
   return 5;
 };
 
-let add = function add(a, b){
+const add = function add(a, b){
   a + b;
-}
+};
 ```
 
 Strictly speaking, all JavaScript functions evaluate to a value, but that value
@@ -122,38 +125,79 @@ It is important to remember that console.log prints its argument to the
 `console` (the terminal using node, the console area of the debug tools using
 chrome) but does not return a value.
 
+### Code Along: Functions
+
+```js
+const helloWorld = function(){
+  return "Hello World!";
+}
+
+const hello = function(name){
+  return "Hello " + name;
+}
+```
+
 #### Parameters and Arguments
 
-When you create a function, you specify the parameters (the formal parameters,
-variables local to the function).  When you call a function, you specify the
-arguments (whose values become the actual parameters, which are the values that
-the formal parameters are set to when your function executes).
+When you create a function, you specify the parameters.  When you call a
+function, you specify the arguments (which are the values that the parameters
+are set to when your function executes).
 
 In JavaScript, functions can be defined as taking zero or more arguments.
 
 ```js
-let zero = function zero() {
+const zero = function zero() {
   return 0;
 };
 
-let one = function one(param){
+const one = function one(param){
   return arg;
 }
 
-let three = function three(param1, param2, param3){
+const three = function three(param1, param2, param3){
   return arg2;
 }
 ```
 
-### Arguments and Return Values
+### Demo: Arguments and Return Values
 
 ```js
-let addOne = (num) => num + 1;
+const addOne = (num) => num + 1;
 ```
 
 What happens when we call a function with the wrong number of arguments?
 
 How would you create a function with an optional argument?
+
+### Code-Along: Arguments and Return Values
+
+```js
+const concat = function(wordOne, wordTwo){
+  return wordOne + wordTwo;
+};
+```
+
+```bash
+concat("Hello", "World");
+> 'HelloWorld'
+```
+
+What's wrong with this output? What if we use numbers instead of strings when
+we invoke the function. We **could** modify this by writing the function
+invocation like this:
+
+```bash
+concat("Hello", " World");
+```
+
+This doesn't really seem like it's the way this function should work though,
+so let's go ahead and make the change to connect two words with a space.
+
+```js
+const concatWithSpace = function(wordOne, wordTwo){
+  return wordOne + " " + wordTwo;
+};
+```
 
 ### Collections
 
@@ -190,23 +234,50 @@ let seniorConsultant = {
 let consultant = {};
 ```
 
+#### Code-Along: Dictionary (Object)
+
+Open up Node and type the following with me as we make an object that refers to
+our first car.
+
+```js
+let car = {
+  'make': 'Volvo',
+  'model': '740 Turbo',
+  year: 1990
+};
+```
+
+Now try typing the following commands:
+
+```bash
+car['year'];
+car.make
+car.[make]
+```
+
 ### Code-Along: Analyze Text
 
 We'll be using the file `lib/collections.js` as a starting point to:
 
 -   create a list of normalized words from a paragraph of text.
+
 -   count words in a string.
+
 -   get the unique words from a string.
+
 -   count the unique words.
+
 -   find the word frequencies (how many times does each unique word appear in
  the string).
 
 We won't get to methods in detail until later, but there are three on String
 we'll need to create a list of normalized words:  `split`, which breaks a String
 into an Array;  `replace`, which makes substitutions; and `toUpperCase`, which
-does the obvious.
+does the obvious. We'll annotate our code as we go so feel free to
+raise questions if you're not sure what a particular function's
+purpose is.
 
-We'll also need two **Regular expressions**:
+We'll also need two [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions):
 
 One or more whitespace characters: `/\s+/`
 
