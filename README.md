@@ -22,7 +22,9 @@ By the end of this lesson, developers should be able to:
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 
-2.  Install dependencies with `npm install`.
+2.  Create a new branch, training, for your work.
+
+3.  Install dependencies with `npm install`.
 
 ## Reference Types
 
