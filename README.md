@@ -139,10 +139,9 @@ const hello = function(name){
 
 #### Parameters and Arguments
 
-When you create a function, you specify the parameters (the formal parameters,
-variables local to the function).  When you call a function, you specify the
-arguments (whose values become the actual parameters, which are the values that
-the formal parameters are set to when your function executes).
+When you create a function, you specify the parameters.  When you call a
+function, you specify the arguments (which are the values that the parameters
+are set to when your function executes).
 
 In JavaScript, functions can be defined as taking zero or more arguments.
 
