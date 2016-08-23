@@ -278,7 +278,7 @@ does the obvious. We'll annotate our code as we go so feel free to
 raise questions if you're not sure what a particular function's
 purpose is.
 
-We'll also need two **Regular expressions**:
+We'll also need two [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions):
 
 One or more whitespace characters: `/\s+/`
 
