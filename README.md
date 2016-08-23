@@ -21,7 +21,8 @@ By the end of this lesson, developers should be able to:
 
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
-1.  Install dependencies with `npm install`.
+
+2.  Install dependencies with `npm install`.
 
 ## Reference Types
 
@@ -101,11 +102,11 @@ In mathematics, a function maps one or more inputs to a single output.
 JavaScript isn't that strict, allowing zero inputs or no specified output.
 
 ```js
-let five = function five() {
+const five = function five() {
   return 5;
 };
 
-let add = function add(a, b){
+const add = function add(a, b){
   a + b;
 }
 ```
@@ -122,6 +123,18 @@ It is important to remember that console.log prints its argument to the
 `console` (the terminal using node, the console area of the debug tools using
 chrome) but does not return a value.
 
+### Code Along: Functions
+
+```js
+const helloWorld = function(){
+  return "Hello World!";
+}
+
+const hello = function(name){
+  return "Hello " + name;
+}
+```
+
 #### Parameters and Arguments
 
 When you create a function, you specify the parameters (the formal parameters,
@@ -132,15 +145,15 @@ the formal parameters are set to when your function executes).
 In JavaScript, functions can be defined as taking zero or more arguments.
 
 ```js
-let zero = function zero() {
+const zero = function zero() {
   return 0;
 };
 
-let one = function one(param){
+const one = function one(param){
   return arg;
 }
 
-let three = function three(param1, param2, param3){
+const three = function three(param1, param2, param3){
   return arg2;
 }
 ```
@@ -148,7 +161,7 @@ let three = function three(param1, param2, param3){
 ### Arguments and Return Values
 
 ```js
-let addOne = (num) => num + 1;
+const addOne = (num) => num + 1;
 ```
 
 What happens when we call a function with the wrong number of arguments?
@@ -195,9 +208,13 @@ let consultant = {};
 We'll be using the file `lib/collections.js` as a starting point to:
 
 -   create a list of normalized words from a paragraph of text.
+
 -   count words in a string.
+
 -   get the unique words from a string.
+
 -   count the unique words.
+
 -   find the word frequencies (how many times does each unique word appear in
  the string).
 
