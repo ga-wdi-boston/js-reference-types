@@ -108,7 +108,7 @@ const five = function five() {
 
 const add = function add(a, b){
   a + b;
-}
+};
 ```
 
 Strictly speaking, all JavaScript functions evaluate to a value, but that value
