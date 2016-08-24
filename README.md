@@ -130,11 +130,11 @@ chrome) but does not return a value.
 ```js
 const helloWorld = function(){
   return "Hello World!";
-}
+};
 
 const hello = function(name){
   return "Hello " + name;
-}
+};
 ```
 
 #### Parameters and Arguments
@@ -150,13 +150,22 @@ const zero = function zero() {
   return 0;
 };
 
+You call this function by writing: `zero();`
+
 const one = function one(param){
-  return arg;
-}
+  return param;
+};
+
+You call this function by writing: `one('argumentExample');`
 
 const three = function three(param1, param2, param3){
-  return arg2;
-}
+  return param2;
+};
+
+You call this function by writing: `three(1, 'two', 'example');`
+
+What would happen if we called this function using only one argument?
+`three(1);`
 ```
 
 ### Demo: Arguments and Return Values
@@ -250,9 +259,9 @@ let car = {
 Now try typing the following commands:
 
 ```bash
-car['year'];
+car['year']
 car.make
-car.[make]
+car[make]
 ```
 
 ### Code-Along: Analyze Text
