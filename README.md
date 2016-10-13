@@ -150,22 +150,23 @@ const zero = function zero() {
   return 0;
 };
 
-You call this function by writing: `zero();`
+// You call this function by writing: `zero();`
 
 const one = function one(param){
   return param;
 };
 
-You call this function by writing: `one('argumentExample');`
+// You call this function by writing: `one('argumentExample');`
 
 const three = function three(param1, param2, param3){
   return param2;
 };
 
-You call this function by writing: `three(1, 'two', 'example');`
+// You call this function by writing: `three(1, 'two', 'example');`
 
-What would happen if we called this function using only one argument?
-`three(1);`
+// What would happen if we called this function using only one argument?
+
+three(1);
 ```
 
 ### Demo: Arguments and Return Values
@@ -305,14 +306,14 @@ processing we've done before.  This practice is meant to be challenging.
 
 ### Function information
 
--   [Function](https://en.wikipedia.org/wiki/Function_(mathematics))
+-   [Function](https://en.wikipedia.org/wiki/Function_(mathematics)
 -   [Subroutine](https://en.wikipedia.org/wiki/Subroutine)
 -   [Variable shadowing](http://en.wikipedia.org/wiki/Variable_shadowing)
--   [Parameter](https://en.wikipedia.org/wiki/Parameter_(computer_programming))
+-   [Parameter](https://en.wikipedia.org/wiki/Parameter_(computer_programming)
 
 ### Collection information
 
--   [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))
+-   [List](https://en.wikipedia.org/wiki/List_(abstract_data_type)
 -   [Array](https://en.wikipedia.org/wiki/Array_data_structure)
 -   [Dictionary](https://en.wikipedia.org/wiki/Associative_array)
 -   [Hash](https://en.wikipedia.org/wiki/Hash_table)
