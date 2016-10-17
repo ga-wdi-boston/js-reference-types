@@ -22,9 +22,9 @@ By the end of this lesson, developers should be able to:
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 
-2.  Create a new branch, `training`, for your work and change into it.
+1.  Create a new branch, `training`, for your work and change into it.
 
-3.  Install dependencies with `npm install`.
+1.  Install dependencies with `npm install`.
 
 ## Reference Types
 
@@ -50,7 +50,7 @@ let code;
 
 list = [];
 dictionary = {};
-code = function (){}; // or `code = () => {};`
+code = function(){}; // or `code = () => {};`
 ```
 
 And here is the equivalent using constructor function syntax (a topic we'll
@@ -104,11 +104,11 @@ In mathematics, a function maps one or more inputs to a single output.
 JavaScript isn't that strict, allowing zero inputs or no specified output.
 
 ```js
-const five = function five() {
+const five = function() {
   return 5;
 };
 
-const add = function add(a, b){
+const add = function(a, b){
   a + b;
 };
 ```
@@ -146,19 +146,19 @@ are set to when your function executes).
 In JavaScript, functions can be defined as taking zero or more arguments.
 
 ```js
-const zero = function zero() {
+const zero = function() {
   return 0;
 };
 
 // You call this function by writing: `zero();`
 
-const one = function one(param){
+const one = function(param){
   return param;
 };
 
 // You call this function by writing: `one('argumentExample');`
 
-const three = function three(param1, param2, param3){
+const three = function(param1, param2, param3){
   return param2;
 };
 
