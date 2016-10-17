@@ -306,14 +306,14 @@ processing we've done before.  This practice is meant to be challenging.
 
 ### Function information
 
--   [Function](https://en.wikipedia.org/wiki/Function_(mathematics)
+-   [Function](https://en.wikipedia.org/wiki/Function_(mathematics))
 -   [Subroutine](https://en.wikipedia.org/wiki/Subroutine)
 -   [Variable shadowing](http://en.wikipedia.org/wiki/Variable_shadowing)
--   [Parameter](https://en.wikipedia.org/wiki/Parameter_(computer_programming)
+-   [Parameter](https://en.wikipedia.org/wiki/Parameter_(computer_programming))
 
 ### Collection information
 
--   [List](https://en.wikipedia.org/wiki/List_(abstract_data_type)
+-   [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))
 -   [Array](https://en.wikipedia.org/wiki/Array_data_structure)
 -   [Dictionary](https://en.wikipedia.org/wiki/Associative_array)
 -   [Hash](https://en.wikipedia.org/wiki/Hash_table)
