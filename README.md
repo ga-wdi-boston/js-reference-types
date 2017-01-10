@@ -50,7 +50,7 @@ let code;
 
 list = [];
 dictionary = {};
-code = function(){}; // or `code = () => {};`
+code = function () {}; // or `code = () => {};`
 ```
 
 And here is the equivalent using constructor function syntax (a topic we'll
@@ -104,11 +104,11 @@ In mathematics, a function maps one or more inputs to a single output.
 JavaScript isn't that strict, allowing zero inputs or no specified output.
 
 ```js
-const five = function() {
+const five = function () {
   return 5;
 };
 
-const add = function(a, b){
+const add = function (a, b) {
   a + b;
 };
 ```
@@ -134,11 +134,11 @@ chrome) but does not return a value.
 ### Code Along: Functions
 
 ```js
-const helloWorld = function(){
+const helloWorld = function () {
   return "Hello World!";
 };
 
-const hello = function(name){
+const hello = function (name) {
   return "Hello " + name;
 };
 ```
@@ -152,19 +152,19 @@ are set to when your function executes).
 In JavaScript, functions can be defined as taking zero or more arguments.
 
 ```js
-const zero = function() {
+const zero = function () {
   return 0;
 };
 
 // You call this function by writing: `zero();`
 
-const one = function(param){
+const one = function (param) {
   return param;
 };
 
 // You call this function by writing: `one('argumentExample');`
 
-const three = function(param1, param2, param3){
+const three = function (param1, param2, param3) {
   return param2;
 };
 
@@ -188,7 +188,7 @@ How would you create a function with an optional argument?
 ### Code-Along: Arguments and Return Values
 
 ```js
-const concat = function(wordOne, wordTwo){
+const concat = function (wordOne, wordTwo) {
   return wordOne + wordTwo;
 };
 ```
@@ -210,7 +210,7 @@ This doesn't really seem like it's the way this function should work though,
 so let's go ahead and make the change to connect two words with a space.
 
 ```js
-const concatWithSpace = function(wordOne, wordTwo){
+const concatWithSpace = function (wordOne, wordTwo) {
   return wordOne + " " + wordTwo;
 };
 ```
