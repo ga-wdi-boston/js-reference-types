@@ -13,7 +13,7 @@ Exercising the JavaScript Reference Types.
 By the end of this lesson, developers should be able to:
 
 -   Identify array, object, and function literals
--   Create and invoke functions with argument-dependent return values
+-   Create and invoke functions
 -   Store, access, and update data values in objects and arrays
 -   Iterate through an array or object and operate on its elements
 
@@ -112,6 +112,12 @@ const add = function(a, b){
   a + b;
 };
 ```
+
+How do I access the value stored in the reference object referenced by the name
+`five`?
+
+Does the value returned by accessing `add` change depending on the arguments
+used?
 
 Strictly speaking, all JavaScript functions evaluate to a value, but that value
 is `undefined` if we do not provide a return (explicitly or implicitly).
