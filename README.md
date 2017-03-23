@@ -10,7 +10,7 @@ Exercising the JavaScript Reference Types.
 
 ## Objectives
 
-By the end of this lesson, developers should be able to:
+By the end of this, developers should be able to:
 
 -   Identify array, object, and function literals
 -   Create and invoke functions
