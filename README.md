@@ -302,6 +302,7 @@ One or more non-word characters: `/\W+/`
 ```bash
 grunt test
 ```
+Note: In order to run grunt test, remove the 'x' before 'describe' on line 16 in spec/lab.spec.js
 
 ## Lab
 
