@@ -10,7 +10,7 @@ Exercising the JavaScript Reference Types.
 
 ## Objectives
 
-By the end of this lesson, developers should be able to:
+By the end of this, developers should be able to:
 
 -   Identify array, object, and function literals
 -   Create and invoke functions
@@ -44,22 +44,22 @@ The following shows the simplest examples of these types created with literal
 syntax:
 
 ```js
-let list;
-let dictionary;
-let code;
+let list
+let dictionary
+let code
 
-list = [];
-dictionary = {};
-code = function () {}; // or `code = () => {};`
+list = []
+dictionary = {}
+code = function () {} // or `code = () => {}`
 ```
 
 And here is the equivalent using constructor function syntax (a topic we'll
 cover later):
 
 ```js
-list = new Array();
-dictionary = new Object();
-code = new Function();
+list = new Array()
+dictionary = new Object()
+code = new Function()
 ```
 
 The literal syntax is more common and allows for functionality unavailable with
@@ -75,26 +75,26 @@ A key difference between a reference and primitive type is best demonstrated
 with the following code:
 
 ```js
-let primitive;
-let otherPrimitive;
-let reference;
-let otherReference;
+let primitive
+let otherPrimitive
+let reference
+let otherReference
 
-primitive = 2;
-otherPrimitive = primitive;
-primitive = 7;
+primitive = 2
+otherPrimitive = primitive
+primitive = 7
 
-primitive;
-otherPrimitive;
+primitive
+otherPrimitive
 
-reference = {};
-otherReference = reference;
+reference = {}
+otherReference = reference
 
-reference.property = 'value';
+reference.property = 'value'
 
-reference;
+reference
 
-otherReference;
+otherReference
 ```
 
 ### Demo: Functions
@@ -105,12 +105,12 @@ JavaScript isn't that strict, allowing zero inputs or no specified output.
 
 ```js
 const five = function () {
-  return 5;
-};
+  return 5
+}
 
 const add = function (a, b) {
-  a + b;
-};
+  a + b
+}
 ```
 
 How do I access the value stored in the reference object referenced by the name
@@ -135,12 +135,12 @@ chrome) but does not return a value.
 
 ```js
 const helloWorld = function () {
-  return "Hello World!";
-};
+  return 'Hello World!'
+}
 
 const hello = function (name) {
-  return "Hello " + name;
-};
+  return 'Hello ' + name
+}
 ```
 
 #### Parameters and Arguments
@@ -153,32 +153,32 @@ In JavaScript, functions can be defined as taking zero or more arguments.
 
 ```js
 const zero = function () {
-  return 0;
-};
+  return 0
+}
 
-// You call this function by writing: `zero();`
+// You call this function by writing: `zero()`
 
 const one = function (param) {
-  return param;
-};
+  return param
+}
 
-// You call this function by writing: `one('argumentExample');`
+// You call this function by writing: `one('argumentExample')`
 
 const three = function (param1, param2, param3) {
-  return param2;
-};
+  return param2
+}
 
-// You call this function by writing: `three(1, 'two', 'example');`
+// You call this function by writing: `three(1, 'two', 'example')`
 
 // What would happen if we called this function using only one argument?
 
-three(1);
+three(1)
 ```
 
 ### Demo: Arguments and Return Values
 
 ```js
-const addOne = (num) => num + 1;
+const addOne = (num) => num + 1
 ```
 
 What happens when we call a function with the wrong number of arguments?
@@ -189,12 +189,12 @@ How would you create a function with an optional argument?
 
 ```js
 const concat = function (wordOne, wordTwo) {
-  return wordOne + wordTwo;
-};
+  return wordOne + wordTwo
+}
 ```
 
 ```bash
-concat("Hello", "World");
+concat('Hello', 'World')
 > 'HelloWorld'
 ```
 
@@ -203,7 +203,7 @@ we invoke the function. We **could** modify this by writing the function
 invocation like this:
 
 ```bash
-concat("Hello", " World");
+concat('Hello', ' World')
 ```
 
 This doesn't really seem like it's the way this function should work though,
@@ -211,8 +211,8 @@ so let's go ahead and make the change to connect two words with a space.
 
 ```js
 const concatWithSpace = function (wordOne, wordTwo) {
-  return wordOne + " " + wordTwo;
-};
+  return wordOne + ' ' + wordTwo
+}
 ```
 
 ### Collections
@@ -233,9 +233,9 @@ Why not call a dictionary an associative array?
 #### List (Array)
 
 ```js
-let fibonacci = [0, 1];
+let fibonacci = [0, 1]
 for (let i = 2; i < 10; i++) {
-  fibonacci[i] = fibonacci[i-1] + fibonacci[i-2];
+  fibonacci[i] = fibonacci[i-1] + fibonacci[i-2]
 }
 ```
 
@@ -246,8 +246,8 @@ let seniorConsultant = {
   'given name':'Antony',
   surname:'Donovan',
   occupation: 'Senior Consultant',
-};
-let consultant = {};
+}
+let consultant = {}
 ```
 
 #### Code-Along: Dictionary (Object)
@@ -260,7 +260,7 @@ let car = {
   'make': 'Volvo',
   'model': '740 Turbo',
   year: 1990
-};
+}
 ```
 
 Now try typing the following commands:
@@ -302,6 +302,7 @@ One or more non-word characters: `/\W+/`
 ```bash
 grunt test
 ```
+Note: In order to run grunt test, remove the 'x' before 'describe' on line 16 in spec/lab.spec.js
 
 ## Lab
 
